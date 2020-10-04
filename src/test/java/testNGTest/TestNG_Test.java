@@ -44,36 +44,13 @@ public class TestNG_Test {
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);			
 	}
 	
-	@Test(retryAnalyzer = testNGTest.RetryFailed.class)
+	@Test
 	public void TestCase1() throws InterruptedException {
 		driver.get(baseUrl);
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
 		Assert.assertEquals("String","String", "Test Failed: No element found");
 		System.out.println("Test case 1 Executed");
-	}
-	@Test(retryAnalyzer = testNGTest.RetryFailed.class)
-	public void TestCase2() throws InterruptedException {
-		driver.get(baseUrl);
-		Thread.sleep(2000);
-		driver.manage().window().maximize();
-		Assert.assertEquals("String123","String", "Test Failed: No element found");
-		System.out.println("Test case 2 Executed");
-	}
-	@Test(retryAnalyzer = testNGTest.RetryFailed.class)
-	public void TestCase3() throws InterruptedException {
-		driver.get(baseUrl);
-		Thread.sleep(2000);
-		driver.manage().window().maximize();
-		Assert.assertEquals("String","String", "Test Failed: No element found");
-		System.out.println("Test case 3 Executed");
-	}
-	@Test(retryAnalyzer = testNGTest.RetryFailed.class)
-	public void TestCase4() throws InterruptedException {
-		driver.get(baseUrl);
-		Thread.sleep(2000);
-		Assert.assertEquals("String","String", "Test Failed: No element found");
-		System.out.println("Test case 4 Executed");
 	}
 	
 	@AfterMethod
@@ -96,13 +73,7 @@ public class TestNG_Test {
 	@AfterSuite
 	public void WindUpSuitSetUp() {
 		System.out.println("Suit Setup Finished");
-	}
-	
-	
-	
-
-	
-	
+	}	
 	
 
 }

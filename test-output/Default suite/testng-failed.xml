@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="testNGTest.TestNG_Test">
         <methods>
-          <include name="TestCase1"/>
           <include name="WindUpTestsSetUp"/>
-          <include name="TestCase4"/>
           <include name="WindUpSuitSetUp"/>
           <include name="setupTests"/>
           <include name="setupClass"/>
@@ -16,9 +14,8 @@
           <include name="WindUpMethodSetUp"/>
           <include name="TestCase2"/>
           <include name="setupSuit"/>
-          <include name="TestCase3"/>
         </methods>
       </class> <!-- testNGTest.TestNG_Test -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
